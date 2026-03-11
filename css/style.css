@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F3E9DC;
+    background-color: #2F1E1A;
     padding: 16px 40px;
     position: fixed;
     top: 16px;
@@ -33,7 +33,7 @@
     font-family: "Fjalla One", sans-serif;
     font-weight: 600;
     font-size: 28px;
-    color: #5A3E36;
+    color: antiquewhite;
     margin: 0;
     transition: transform 0.2s ease;
 }
@@ -51,7 +51,7 @@
 
 .menu-options ul li a {
     text-decoration: none;
-    color: #2F1E1A;
+    color: antiquewhite;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -206,3 +206,60 @@ main {
     border-radius: 24px;
 }
 
+
+/* Footer */
+.footer {
+    background-color: #2F1E1A;
+    color: antiquewhite;
+    padding: 30px 40px;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;          /* alinha verticalmente */
+    justify-content: space-between; /* espaço entre os blocos */
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;              /* para telas pequenas */
+    gap: 20px;
+}
+
+.footer-logo h3 {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.footer-text p,
+.footer-copy p {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+.footer-links a {
+    color: antiquewhite;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #C08A5D;
+}
+
+/* Para responsivo, empilha os blocos em telas pequenas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-links a {
+        margin: 0 5px;
+    }
+}
